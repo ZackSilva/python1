@@ -170,21 +170,37 @@ def draw_move(board):
                 board[free_spaces[j][0]][free_spaces[j][1]] = 'X'
                 return
 
+
+
 # Main caller
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    # print_hi('Zack')
+    import math
+    import platform
+    # This function displays information about the current computer hardware information etc.
+    def demonstrate_module():
+        print(f"Python version: {platform.python_version()}")
+        print(f"Machine architecture: {platform.architecture()}")
+        print(f"Machine processor type: {platform.processor()}")
+
+
+    result = math.e != math.pow(2,4)
+    print(int(result))
+    print_hi('Zack')
     # grab_name()
     # w4loops()
     # w4coin_flip()
 
-    display_board(grid)
-    while True:
-        make_list_of_free_fields(grid)
-        enter_move(grid)
-        display_board(grid)
-        victory_for(grid, 'O')
-        make_list_of_free_fields(grid)
-        draw_move(grid)
-        display_board(grid)
-        victory_for(grid, 'X')
+    # display_board(grid)
+    # while True:
+        # make_list_of_free_fields(grid)
+        # enter_move(grid)
+        # display_board(grid)
+        # victory_for(grid, 'O')
+        # make_list_of_free_fields(grid)
+        # draw_move(grid)
+        # display_board(grid)
+        # victory_for(grid, 'X')
+
+    demonstrate_module()
+
